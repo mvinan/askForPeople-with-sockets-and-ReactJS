@@ -6,6 +6,8 @@ const WebpackDevServer = require('webpack-dev-server');
 const config = require('./webpack.config');
 const open = require('open');
 
+// My implement
+
 new WebpackDevServer(webpack(config), config.devServer)
 .listen(config.port, 'localhost', (err) => {
   if (err) {

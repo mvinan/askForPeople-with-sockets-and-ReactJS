@@ -7,7 +7,7 @@ export default class PeopleTitle extends React.Component{
   render(){
     return(
       <div>
-        <h2>Name</h2>
+        <h2>{this.props.peopleName.name.first}</h2>
       </div>
       )
   }

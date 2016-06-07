@@ -7,7 +7,7 @@ export default class PeoplePhoto extends React.Component{
   render(){
     return(
       <div>
-        <img src="" alt="peope photo"/>
+        <img src={this.props.peoplePhoto.picture.thumbnail} alt="peope photo"/>
       </div>
       )
   }

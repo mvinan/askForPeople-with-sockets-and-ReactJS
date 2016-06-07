@@ -1,6 +1,6 @@
 import Reflux from 'reflux';
 
-let PeopleActions = Reflux.createActions([
+var PeopleActions = Reflux.createActions([
   'fetchPeople'
   ])
 
