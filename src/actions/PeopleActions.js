@@ -1,7 +1,8 @@
 import Reflux from 'reflux';
 
 var PeopleActions = Reflux.createActions([
-  'fetchPeople'
+  'fetchPeople',
+  'askForPeople'
   ])
 
 export default PeopleActions;

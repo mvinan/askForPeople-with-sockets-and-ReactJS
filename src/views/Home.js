@@ -16,9 +16,18 @@ export default class Home extends React.Component {
     PeopleActions.fetchPeople()
   }
 
+  handlePeople(){
+    PeopleActions.askForPeople()
+  }
+
   render(){
     if(this.state.people != null){
-      return (<PeopleFrame peopleData={this.state.people}/>)
+      return (
+        <div>
+          <PeopleFrame peopleData={this.state.people}/>
+          <button onClick={this.handlePeople.bind(this)}>Preguntar</button>
+        </div>
+      )
     }else{
       return <h3>Loading…</h3>
     }
